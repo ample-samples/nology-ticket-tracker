@@ -6,7 +6,7 @@ type TicketProps = {
 }
 
 export const Ticket = ({name, role}: TicketProps) => {
-  const [ counter, setCounter ] = useState(0)
+  const [ counter, setCounter ] = useState<number>(0)
 
   const handleIncrement = () => setCounter(counter + 1)
   const handleDecrement = () => {
