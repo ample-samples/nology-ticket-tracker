@@ -1,14 +1,14 @@
 import { Ticket } from "./components/Ticket"
-import "./index.scss"
+import "./app.scss"
 
 function App() {
   return (
-    <>
+    <section id="app">
       <Ticket />
       <Ticket />
       <Ticket />
       <Ticket />
-    </>
+    </section>
   )
 }
 

@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 *.css
+*.css.map
 
 # Editor directories and files
 .vscode/*

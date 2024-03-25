@@ -1,5 +1,9 @@
+import "./Ticket.scss"
+
 export const Ticket = () => {
   return (
-  <h3>Ticket</h3>
+  <div className="ticket">
+      <h3>Ticket</h3>
+    </div>
 )
 }
