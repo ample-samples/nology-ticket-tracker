@@ -1,8 +1,13 @@
-import './App.css'
+import { Ticket } from "./components/Ticket"
+import "./index.scss"
 
 function App() {
   return (
     <>
+      <Ticket />
+      <Ticket />
+      <Ticket />
+      <Ticket />
     </>
   )
 }
