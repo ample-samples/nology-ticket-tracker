@@ -1,23 +1,36 @@
 .ticket {
-	border: 2px solid black;
+	border: 1px solid lighten(#323268, 15%);
+	background-color: #F64488;
+	color: white;
+	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 	text-align: center;
 	padding: 5px;
-	margin: 2px;
-	max-width: 150px;
+	width: 150px;
 	height: 180px;
 	position: relative;
 	align-items: center;
 
+	&__heading {
+		&--role {
+			color: lighten(#323268, 15%);
+			font-size: 1.1rem
+		}
+	}
+
+
 	&__counter {
-		border: 2px solid black;
+		border: 1px solid lighten(#323268, 15%);
+		border-radius: 0  0 4px 4px;
 		padding: 4px;
 		position: absolute;
-		width: calc(100% - 5px);
-		margin: 3px;
+		width: calc(100% - 12px);
+		margin-bottom: 6px;
 		bottom: 0;
+		color: white;
+		background-color: #927196;
 
 		&-controls {
 			display: grid;
@@ -25,8 +38,14 @@
 			gap: 4px;
 
 			.ticket__counter {
-				&-increment, &-decrement {
+
+				&-increment,
+				&-decrement {
 					display: inline;
+					background-color: lighten(#323268, 15%);
+					border: none;
+					border-radius: 3px;
+					color: white;
 				}
 			}
 		}
