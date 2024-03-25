@@ -1,4 +1,17 @@
 .ticket {
 	border: 2px solid black;
 	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	margin: 2px;
+
+	&__counter {
+		border: 2px solid black;
+		padding: 4px;
+
+		&-controls {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 }
