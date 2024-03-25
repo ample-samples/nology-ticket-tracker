@@ -4,10 +4,7 @@ import "./app.scss"
 function App() {
   return (
     <section id="app">
-      <Ticket />
-      <Ticket />
-      <Ticket />
-      <Ticket />
+      <Ticket name="Todd" role="software engineer" />
     </section>
   )
 }
