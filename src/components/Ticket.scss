@@ -16,7 +16,7 @@
 	&__heading {
 		&--role {
 			color: lighten(#323268, 15%);
-			font-size: 1.1rem
+			font-size: 1rem
 		}
 	}
 
@@ -38,7 +38,6 @@
 			gap: 4px;
 
 			.ticket__counter {
-
 				&-increment,
 				&-decrement {
 					display: inline;
