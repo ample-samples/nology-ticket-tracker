@@ -3,9 +3,12 @@
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
 	gap: 20px;
+
 	&__title {
-		font-size: 2rem;;
+		font-size: 2rem;
+		;
 	}
+
 	&__link {
 		color: black;
 	}
