@@ -1,8 +1,7 @@
-import { Ticket } from "./components/Ticket"
 import "./app.scss"
-import team from "./data/team"
 import Nav from "./components/Nav/Nav"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Tickets from "./routes/tickets/tickets"
 
 function App() {
   return (
@@ -11,9 +10,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/tickets" element={
-            <section className="main">
-              {team.map(({ name, role, id }) => <Ticket name={name} role={role} key={id} />)}
-            </section>
+            <Tickets />
           }></Route>
           <Route path="/" element={<h1>Home</h1>}></Route>
         </Routes>
