@@ -13,7 +13,19 @@
 	position: relative;
 	align-items: center;
 
+	&__headings {
+		margin-top: 5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 25px;
+	}
+
 	&__heading {
+		&--name {
+			font-size: 16px;
+		}
 		&--role {
 			color: lighten(#323268, 15%);
 			font-size: 1rem
