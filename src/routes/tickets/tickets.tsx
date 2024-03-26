@@ -1,3 +1,4 @@
+import "./tickets.scss"
 import { Ticket } from "../../components/Ticket"
 import team from "../../data/team"
 import { FormEvent, useState } from "react"
@@ -33,7 +34,7 @@ const Tickets = () => {
   return (
     <>
       <section className="search">
-        <input className="search__name-input" type="text" onChange={handleSearch} />
+        <input placeholder=" Name" className="search__name-input" type="text" onChange={handleSearch} />
         <select className="search__role-select" id="role" name="role" onChange={handleRoleChange}>
           <option value="">All roles</option>
           {Array.from(uniqueRoles).map(role => <option key={role} value={role}>{role}</option>)}
