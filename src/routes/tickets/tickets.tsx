@@ -1,5 +1,5 @@
 import "./tickets.scss"
-import { Ticket } from "../../components/Ticket"
+import { Ticket } from "../../components/Ticket/Ticket"
 import team from "../../data/team"
 import { FormEvent, useState } from "react"
 
