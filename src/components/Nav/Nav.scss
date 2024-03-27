@@ -1,16 +1,21 @@
+@use "./../../styles/variables" as *;
+
 .nav {
 	padding: 10px;
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
 	gap: 20px;
+	background-color: $color-background;
+	border-bottom: 2px solid $color-secondary;
 
 	&__title {
 		font-size: 2rem;
+		color: white;
 		;
 	}
 
 	&__link {
-		color: black;
+		color: white;
 		margin: auto 0;
 	}
 }

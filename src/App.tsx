@@ -7,7 +7,7 @@ import team from "./data/teamExt"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="nology-ticket-tracker">
       <section id="app">
         <Nav />
         <Routes>
