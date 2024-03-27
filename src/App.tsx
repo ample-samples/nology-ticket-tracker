@@ -3,6 +3,7 @@ import Nav from "./components/Nav/Nav"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Tickets from "./routes/tickets/tickets"
 import Home from "./routes/home/home"
+import team from "./data/teamExt"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/tickets" element={
-            <Tickets />
+            <Tickets team={team} />
           }></Route>
           <Route path="/" element={<Home />}></Route>
         </Routes>

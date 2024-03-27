@@ -1,7 +1,25 @@
 import "./tickets.scss"
 import { Ticket } from "../../components/Ticket/Ticket"
-import team from "../../data/team"
 import { FormEvent, useState } from "react"
+
+type TeamMember = {
+  id: number,
+  name: string,
+  role: string,
+  profile: {
+    experience: string,
+    department: string,
+    techstack: string[],
+    profilePicture:
+    string,
+  },
+}
+
+type Team = TeamMember[]
+type TicketsProps = {
+  team: Team
+}
+
 
 const filterMatchesName = (searchItem: string, userSearch: string) => {
   if (userSearch === '') {
@@ -12,7 +30,7 @@ const filterMatchesName = (searchItem: string, userSearch: string) => {
   return false
 }
 
-const Tickets = () => {
+const Tickets = ({ team }: TicketsProps) => {
   const [searchTerm, setSearchTerm] = useState("")
   const [roleSearch, setRoleSearch] = useState("")
 
