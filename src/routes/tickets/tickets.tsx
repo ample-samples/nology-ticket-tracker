@@ -3,7 +3,6 @@ import { Ticket } from "../../components/Ticket/Ticket"
 import { FormEvent, useState } from "react"
 import { Team } from "../../types/TeamExt"
 
-
 type TicketsProps = {
   team: Team
 }
