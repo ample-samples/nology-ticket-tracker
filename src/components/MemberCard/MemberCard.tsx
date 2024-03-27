@@ -1,4 +1,5 @@
 import { TeamMember } from "../../types/TeamExt"
+import "./MemberCard.scss"
 
 type MemberCardProps = {
   member: TeamMember

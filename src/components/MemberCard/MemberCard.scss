@@ -1,0 +1,9 @@
+@use "./../../styles/variables" as *;
+
+.member-card {
+	border: 2px solid $color-secondary;
+	border-radius: 5px;
+	padding: 20px;
+	color: white;
+	background-color: $color-background
+}
