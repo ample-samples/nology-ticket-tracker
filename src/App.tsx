@@ -2,6 +2,7 @@ import "./app.scss"
 import Nav from "./components/Nav/Nav"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Tickets from "./routes/tickets/tickets"
+import Home from "./routes/home/home"
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route path="/tickets" element={
             <Tickets />
           }></Route>
-          <Route path="/" element={<h1>Home</h1>}></Route>
+          <Route path="/" element={<Home />}></Route>
         </Routes>
       </section>
     </BrowserRouter>
