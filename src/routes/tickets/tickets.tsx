@@ -1,25 +1,12 @@
 import "./tickets.scss"
 import { Ticket } from "../../components/Ticket/Ticket"
 import { FormEvent, useState } from "react"
+import { Team } from "../../types/TeamExt"
 
-type TeamMember = {
-  id: number,
-  name: string,
-  role: string,
-  profile: {
-    experience: string,
-    department: string,
-    techstack: string[],
-    profilePicture:
-    string,
-  },
-}
 
-type Team = TeamMember[]
 type TicketsProps = {
   team: Team
 }
-
 
 const filterMatchesName = (searchItem: string, userSearch: string) => {
   if (userSearch === '') {
