@@ -1,6 +1,8 @@
+@use "./../../styles/variables" as *;
+
 .ticket {
-	border: 1px solid lighten(#323268, 15%);
-	background-color: #F64488;
+	border: 1px solid $color-secondary;
+	background-color: $color-background;
 	color: white;
 	border-radius: 8px;
 	display: flex;
@@ -27,14 +29,14 @@
 			font-size: 16px;
 		}
 		&--role {
-			color: lighten(#323268, 15%);
+			color: $color-secondary;
 			font-size: 1rem
 		}
 	}
 
 
 	&__counter {
-		border: 1px solid lighten(#323268, 15%);
+		border: 1px solid $color-secondary;
 		border-radius: 0  0 4px 4px;
 		padding: 4px;
 		position: absolute;
@@ -42,7 +44,7 @@
 		margin-bottom: 6px;
 		bottom: 0;
 		color: white;
-		background-color: #927196;
+		background-color: $color-background-secondary;
 
 		&-controls {
 			display: grid;
@@ -53,7 +55,7 @@
 				&-increment,
 				&-decrement {
 					display: inline;
-					background-color: lighten(#323268, 15%);
+					background-color: $color-secondary;
 					border: none;
 					border-radius: 3px;
 					color: white;
